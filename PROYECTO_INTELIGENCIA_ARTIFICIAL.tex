@@ -1,0 +1,336 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Predicción de Rendimiento Estudiantil},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Predicción de Rendimiento Estudiantil}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{santiago-martuxednez-beltruxe1n}{%
+\section{Santiago Martínez
+Beltrán}\label{santiago-martuxednez-beltruxe1n}}
+
+\begin{quote}
+\emph{Facultad de Ciencias Naturales e Ingeniería}
+
+Universidad Jorge Tadeo Lozano
+
+Bogotá, Colombia
+
+\href{mailto:santiago.martinezb@utadeo.edu.co}{\nolinkurl{santiago.martinezb@utadeo.edu.co}}
+\end{quote}
+
+\hypertarget{sergio-daniel-aza-ocampo}{%
+\section{\texorpdfstring{\hfill\break
+Sergio Daniel Aza
+Ocampo}{ Sergio Daniel Aza Ocampo}}\label{sergio-daniel-aza-ocampo}}
+
+\begin{quote}
+\emph{Facultad de Ciencias Naturales e Ingeniería}
+
+Universidad Jorge Tadeo Lozano
+
+Bogotá, Colombia
+
+\href{mailto:Sergiod.azaocampo@utadeo.edu.co}{\nolinkurl{Sergiod.azaocampo@utadeo.edu.co}}
+\end{quote}
+
+\hypertarget{curso-inteligencia-artificial}{%
+\section{Curso: Inteligencia
+Artificial}\label{curso-inteligencia-artificial}}
+
+\hypertarget{de-octubre-de-2025}{%
+\section{5 de octubre de 2025}\label{de-octubre-de-2025}}
+
+\hypertarget{juliuxe1n-santiago-hernuxe1ndez-gonzuxe1lez}{%
+\section{\texorpdfstring{\hfill\break
+Julián Santiago Hernández
+González}{ Julián Santiago Hernández González}}\label{juliuxe1n-santiago-hernuxe1ndez-gonzuxe1lez}}
+
+\begin{quote}
+\emph{Facultad de Ciencias Naturales e Ingeniería}
+
+Universidad Jorge Tadeo Lozano
+
+Bogotá, Colombia
+
+\href{mailto:Julians.hernandezg@uatdeo.edu.co}{\nolinkurl{Julians.hernandezg@uatdeo.edu.co}}
+\end{quote}
+
+\hypertarget{section}{%
+\section{}\label{section}}
+
+\begin{quote}
+\emph{\textbf{Resumen}}
+
+Este proyecto propone el desarrollo de un modelo de aprendizaje
+automático capaz de predecir el rendimiento académico de los estudiantes
+universitarios a partir de variables socioeducativas y de
+comportamiento. El objetivo es identificar factores que influyen en el
+desempeño y anticipar posibles riesgos de bajo rendimiento, con el fin
+de apoyar estrategias de acompañamiento académico en la Universidad
+Jorge Tadeo Lozano.\\
+Se utilizará el dataset \emph{Student Performance} del repositorio UCI
+Machine Learning {[}1{]}, el cual contiene información de 649
+estudiantes de educación media en Portugal.\\
+El enfoque de IA corresponde a una tarea de clasificación con modelos
+como Árboles de Decisión y Regresión Logística {[}7{]}{[}8{]}{[}9{]}.\\
+Se espera lograr una precisión superior al 80\% y comprobar que
+variables como las horas de estudio y las ausencias tienen alta
+correlación con el rendimiento final {[}4{]}{[}6{]}.
+
+\emph{\textbf{Problema Local y Motivación}}
+
+En el contexto universitario bogotano, el rendimiento académico de los
+estudiantes es un factor crítico que influye en la deserción y en el
+éxito profesional. En la Universidad Jorge Tadeo Lozano, al igual que en
+muchas instituciones, los docentes suelen carecer de herramientas
+predictivas que les permitan identificar tempranamente a estudiantes en
+riesgo de bajo desempeño.\\
+El proyecto busca aplicar inteligencia artificial para apoyar la gestión
+académica mediante la predicción del rendimiento a partir de información
+disponible, como hábitos de estudio, notas parciales y asistencia
+{[}2{]}{[}3{]}{[}5{]}.\\
+Esto permitiría orientar intervenciones personalizadas y promover la
+permanencia estudiantil, impactando positivamente la calidad educativa y
+la eficiencia institucional {[}4{]}.
+
+\emph{\textbf{Dataset}}
+
+Se empleará el \emph{Student Performance Dataset} del repositorio
+\textbf{UCI Machine Learning} {[}1{]}. Este conjunto contiene 649
+registros de estudiantes y 33 variables, incluyendo factores
+demográficos, sociales y académicos.\\
+Las variables más relevantes para el modelo son: studytime, failures,
+absences, G1, G2 y G3 (notas).\\
+El dataset está disponible bajo licencia pública para investigación
+educativa y es representativo por su diversidad de características, lo
+cual lo hace adecuado para modelar la predicción del rendimiento
+académico {[}1{]}{[}4{]}.\\
+Los datos se encuentran en formato CSV, lo que facilita su manipulación
+y procesamiento mediante bibliotecas de Python como \emph{pandas} y
+\emph{scikit-learn} {[}10{]}
+
+\emph{\textbf{Tarea de IA y Algoritmo(s)}}
+
+La tarea corresponde a un problema de \textbf{clasificación supervisada}
+en datos tabulares {[}5{]}{[}6{]}.\\
+El objetivo del modelo es predecir si un estudiante tendrá un
+rendimiento alto o bajo según sus características previas.\\
+Se emplearán los algoritmos \textbf{Árbol de Decisión} y
+\textbf{Regresión Logística}, por su facilidad de interpretación y
+eficiencia en datasets pequeños {[}7{]}{[}8{]}{[}9{]}.\\
+El Árbol de Decisión permitirá visualizar los factores determinantes,
+mientras que la Regresión Logística ofrecerá una referencia estadística
+como línea base {[}7{]}{[}8{]}.
+
+\emph{\textbf{Metodología y Evaluación}}
+
+El proceso inicia con la limpieza del dataset y la codificación de
+variables categóricas mediante \emph{Label Encoding} o \emph{One-Hot
+Encoding} {[}9{]}.\\
+Posteriormente, se dividirán los datos en conjuntos de entrenamiento
+(80\%) y prueba (20\%) {[}5{]}.\\
+Se evaluará el modelo utilizando métricas como \emph{Accuracy},
+\emph{Precision}, \emph{Recall} y \emph{F1-Score}, además de una matriz
+de confusión para interpretar los errores {[}9{]}{[}10{]}.\\
+Como línea base, se compararán los resultados con un clasificador
+aleatorio, verificando si la combinación de árboles de decisión y
+regresión logística mejora el rendimiento de la predicción
+{[}4{]}{[}6{]}.
+
+\emph{\textbf{Resultados esperados, ética y cronograma}}
+
+Se espera que el modelo prediga con alta exactitud el rendimiento final
+y determine qué factores influyen más en el desempeño académico
+{[}4{]}{[}6{]}.\\
+Los resultados permitirán crear estrategias preventivas en la
+universidad, contribuyendo a mejorar la retención y la toma de
+decisiones institucionales {[}2{]}{[}3{]}.\\
+Desde el punto de vista ético, se garantizará la anonimización de los
+datos y el uso exclusivo con fines académicos, evitando sesgos por
+género o condición socioeconómica {[}3{]}{[}8{]}.\\
+\textbf{Cronograma propuesto:}~
+\end{quote}
+
+\begin{itemize}
+\item
+  \textbf{Semana 1:} Revisión del problema, recolección del dataset y
+  exploración inicial de variables.~
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{Semana 2:} Limpieza y preprocesamiento de los datos
+  (codificación, normalización y selección de variables).~
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{Semana 3:} Entrenamiento de los modelos (Árbol de Decisión y
+  Regresión Logística) y ajuste de parámetros.~
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{Semana 4:} Evaluación del desempeño de los modelos, análisis
+  de métricas y visualización de resultados.~
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{Semana 5:} Redacción final del informe, revisión ética,
+  corrección de estilo y entrega del paper.~
+\end{itemize}
+
+\begin{quote}
+\emph{\textbf{Roles de Equipo}}
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3431}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2878}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3691}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Rol}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Integrante}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Responsabilidad}
+\end{minipage} \\
+\midrule
+\endhead
+\textbf{Análisis de datos y preprocesamiento} & Persona 1 & Obtención,
+limpieza y análisis del Dataset \\
+\textbf{Modelado y métricas} & Persona 2 & Entrenamiento y evaluación de
+modelos \\
+\textbf{Redacción y ética} & Persona 3 & Elaboración del informe,
+revisión ética y cronograma \\
+\bottomrule
+\end{longtable}
+
+\begin{quote}
+\emph{\textbf{Enlace Repositorio de Github:}}
+
+\url{https://github.com/Santiageoff/ProyectoIA.git}
+\end{quote}
+
+\textbf{\textsc{Referencias}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  P. Cortez and A. M. G. Silva, ``Using data mining to predict secondary
+  school student performance,'' University of Minho, Portugal, UCI
+  Machine Learning Repository, 2008. {[}Online{]}. Available:
+  \url{https://archive.ics.uci.edu/ml/datasets/Student+Performance.}
+\item
+  C. Romero and S. Ventura, ``Educational data mining and learning
+  analytics: An updated survey,'' Wiley Interdisciplinary Reviews: Data
+  Mining and Knowledge Discovery, vol. 10, no. 3, e1355, 2020, doi:
+  10.1002/widm.1355.
+\item
+  V. Kumar and A. Chadha, ``An empirical study of the applications of
+  data mining techniques in higher education,'' International Journal of
+  Advanced Computer Science and Applications (IJACSA), vol. 3, no. 2,
+  pp. 80--84, 2012, doi: 10.14569/IJACSA.2012.030214.
+\item
+  A. N. M. Shahiri, W. Husain, and N. A. Rashid, ``A review on
+  predicting student performance using data mining techniques,''
+  Procedia Computer Science, vol. 72, pp. 414--422, 2015, doi:
+  10.1016/j.procs.2015.12.111.
+\item
+  S. B. Kotsiantis, C. J. Pierrakeas, and P. E. Pintelas, ``Predicting
+  students' performance in distance learning using machine learning
+  techniques,'' Applied Artificial Intelligence, vol. 18, no. 5, pp.
+  411--426, 2004, doi: 10.1080/08839510490442058.
+\item
+  S. Huang, N. Fang, and N. Chen, ``Predicting student academic
+  performance with educational data mining,'' Frontiers in Education
+  Technology, vol. 1, no. 1, pp. 1--8, 2018, doi: 10.22158/fet.v1n1p1.
+\item
+  M. Kumar and A. Singh, ``Predicting student performance using decision
+  tree algorithms,'' International Journal of Computer Applications,
+  vol. 175, no. 5, pp. 22--26, 2017, doi: 10.5120/ijca2017914605.
+\item
+  S. Raschka and V. Mirjalili, *Python Machine Learning: Machine
+  Learning and Deep Learning with Python, scikit-learn, and TensorFlow
+  2*, 4th ed. Birmingham, UK: Packt Publishing, 2022. {[}Online{]}.
+  Available:
+  \url{https://www.packtpub.com/product/python-machine-learning-fourth-edition/9781801819312}.
+\item
+  A. Géron, *Hands-On Machine Learning with Scikit-Learn, Keras and
+  TensorFlow*, 3rd ed. Sebastopol, CA: O'Reilly Media, 2022.
+  {[}Online{]}. Available:
+  \url{https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/}.
+\item
+  F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O.
+  Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J.
+  Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E.
+  Duchesnay, ``Scikit-learn: Machine learning in Python,'' *Journal of
+  Machine Learning Research*, vol. 12, pp. 2825--2830, 2011.
+  {[}Online{]}. Available:
+  \url{https://jmlr.org/papers/v12/pedregosa11a.html}.
+\end{enumerate}
+
+\end{document}
