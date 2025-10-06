@@ -1,28 +1,60 @@
-# ProyectoIA# Proyecto: Predicción del Rendimiento Estudiantil
+# Predicción del Rendimiento Estudiantil con Inteligencia Artificial
 
-Este repositorio contiene los archivos solicitados para la entrega del proyecto de Inteligencia Artificial aplicado a un problema local, como parte del curso de IA 
+Este repositorio contiene los archivos del proyecto final del curso de Inteligencia Artificial (Universidad Jorge Tadeo Lozano), cuyo objetivo es aplicar técnicas de aprendizaje automático para predecir el rendimiento académico de estudiantes a partir de datos educativos.
 
-## 📄 Entregables incluidos
+## 📄 Entregables incluidos (F5)
 
-De acuerdo con la instrucción, este repositorio contiene:
+Este repositorio contiene los elementos solicitados:
 
-- ✅ PDF final del paper: paper.pdf  
-- ✅ Fuente en LaTeX: paper.tex  
-- ✅ Archivo de bibliografía: referencias.bib  
-- ✅ Archivo de licencia: LICENSE
+- ✅ PDF final del paper: PROYECTO INTELIGENCIA ARTIFICIAL - PREDICCION DEL RENDIMIENTO ESTUDIANTIL.pdf  
+- ✅ Archivo fuente en LaTeX: PROYECTO_INTELIGENCIA_ARTIFICIAL.tex  
+- ✅ Archivo de bibliografía en formato BibTeX: referencias.bib  
+- ✅ Archivo LICENSE (MIT)
 
-## 🔗 Repositorio
+## 🧠 Descripción del proyecto
 
-Este repositorio cumple con los requisitos del punto F5: incluye código/documentos/datos y licencia.
+El objetivo del proyecto es desarrollar un modelo de clasificación supervisada capaz de predecir si un estudiante universitario tendrá un rendimiento académico alto o bajo, utilizando variables como:
 
-- Código fuente: incluido o referenciado  
-- Documentos: paper.tex, paper.pdf, referencias.bib  
-- Datos: indicados en el paper (dataset externo UCI Student Performance)  
-- Licencia: archivo LICENSE incluido (MIT)
+- Horas de estudio
+- Asistencia
+- Calificaciones parciales
+- Variables socioeducativas
 
-## 👥 Autores
+Se utilizan modelos como Árboles de Decisión y Regresión Logística entrenados sobre el dataset Student Performance del repositorio UCI Machine Learning.
 
-- Sergio Daniel Aza – sergiod.azao@utadeo.edu.co  
-- Santiago Martinez Beltran – santiagom.beltra@utadeo.edu.co  
-- Julian Santiago Hernandez – julians.hernandezg@utadeo.edu.co  
-- 
+## 🗃️ Dataset utilizado
+
+- Nombre: Student Performance Dataset  
+- Fuente: UCI Machine Learning Repository  
+- Enlace: https://archive.ics.uci.edu/ml/datasets/Student+Performance  
+- Formato: CSV  
+- Registros: 649 estudiantes  
+- Variables: 33 atributos demográficos, sociales y académicos  
+- Licencia: Uso público para investigación
+
+## ⚙️ Modelos implementados
+
+- Árbol de Decisión (Decision Tree)
+- Regresión Logística (Logistic Regression)
+
+## 📈 Evaluación y métricas
+
+- División de datos: 80% entrenamiento, 20% prueba  
+- Métricas: Accuracy, Precision, Recall, F1-Score  
+- Línea base: Clasificador aleatorio
+
+## ⚖️ Ética
+
+- Uso exclusivo con fines académicos  
+- Anonimización del dataset  
+- Mitigación de sesgos por género o condición socioeconómica
+
+## 👥 Integrantes del equipo
+
+- Santiago Martínez Beltrán – santiago.martinezb@utadeo.edu.co  
+- Sergio Daniel Aza Ocampo – Sergiod.azaocampo@utadeo.edu.co  
+- Julián Santiago Hernández González – julians.hernandezg@utadeo.edu.co
+
+## 📜 Licencia
+
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más información.
